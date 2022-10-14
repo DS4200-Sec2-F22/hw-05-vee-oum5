@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html> 
 
+ <!-- all the meta data of the htmk page goes in here  -->
 <head>
     <meta charset=utf-8/>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/d3.v6.1.1/d3.min.js"></script>
+
+    <title>HW-05</title>
 </head>
-
-
+<!--  the content of the webpage goes here -->
 <body>
 
-
+    <header><h1>HW-05: Interactive Graph with D3</h1></header>
+    <!-- divide the page into 2 columns using flexbox -->
+    <div class="container">
+        <div id="column1">
+            <!-- display the scatterplot and the barchart in the first column using javascript -->
+            <div id="scatterplot"></div>
+            <div id="barchart"></div>
+        </div>
+        <div id="column2" >
+            <!-- allow the user to interact with the graphs-->
+            <div id="clicked_coordinates"></div>
+            <div id="dropdown">
+                <p>Select an x-coordinate: <select name='x' id="x">
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                    <option value='8'>8</option>
+                    <option value='9'>9</option>
+                </select>
+                </p>
+                <p>Select a y-coordinate: <select name='y' id="y">
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                    <option value='8'>8</option>
+                    <option value='9'>9</option>
+                </select>
+                </p>
+                <button type="button" id="Butt">Add Point!</button>
+            </div>
+        </div>
+    </div>
+    <!-- display all the resources that were used during the project-->
+    <header><h1>Acknowledgements</h1></header>
+    <script src="js/program.js"></script>
 </body>
-
 </html>
